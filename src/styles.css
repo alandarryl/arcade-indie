@@ -1,0 +1,137 @@
+/* ====== CONFIGURATION GENERALE ====== */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b0f19; /* Fond sombre style gaming */
+  color: #f8fafc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ====== PAGE D'ACCUEIL (HOME) ====== */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  /* Effet de texte dégradé violet/bleu */
+  background: linear-gradient(to right, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fillColor: transparent;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Gros bouton central */
+.enter-button {
+  display: inline-block;
+  padding: 16px 40px;
+  background-color: #a855f7;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50px; /* Bouton arrondi */
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+.enter-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.7);
+  background-color: #b55fe6;
+}
+
+/* ====== PAGE DES JEUX (PLAY) ====== */
+.play-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.back-button {
+  display: inline-block;
+  color: #94a3b8;
+  text-decoration: none;
+  margin-bottom: 30px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.back-button:hover {
+  color: #a855f7;
+}
+
+/* La grille qui accueille les cartes */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Les cartes de jeux */
+.game-card {
+  background-color: #1e293b;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.game-card:hover {
+  transform: translateY(-5px); /* Légère animation de survol */
+}
+
+.game-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.game-info {
+  padding: 20px;
+}
+
+.game-title {
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+}
+
+.game-description {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.play-now-button {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  background-color: #3b82f6; /* Bleu pour différencier */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.play-now-button:hover {
+  background-color: #2563eb;
+}
