@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import games from "../data/games.js";
+import { gamesData } from "../data/games.js";
 
-const gameData = games.gamesData; // On importe les données des jeux depuis le fichier externe
 
 export default function Play() {
   const [activeGameUrl, setActiveGameUrl] = useState(null);
